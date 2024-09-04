@@ -178,7 +178,7 @@ wait
 rm -rf temp/tmp.*
 if [ -z "$(ls -A1 ${BUILD_DIR})" ]; then abort "All builds failed."; fi
 
-log "\nInstall [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube APK"
+log "\nInstall [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube RVX APK"
 log "\nUse [zygisk-detach](https://github.com/j-hc/zygisk-detach) and [zygisk-detach-app](https://github.com/j-hc/zygisk-detach-app/releases) to detach root YouTube RVX from Play Store"
 log "\n[YouTube-RVX-by-IGOR3K99](https://github.com/IGOR3K99/YouTube-RVX-by-IGOR3K99)\n"
 log "$(cat $TEMP_DIR/*-rv/changelog.md)"
