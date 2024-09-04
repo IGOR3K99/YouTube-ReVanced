@@ -1,8 +1,8 @@
 YouTube-Extended: 19.22.43  
 
-Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music APKs  
+Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube RVX APK  
 
-Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) and [zygisk-detach-app](https://github.com/j-hc/zygisk-detach-app/releases) to detach root ReVanced YouTube and YT Music from Play Store  
+Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) and [zygisk-detach-app](https://github.com/j-hc/zygisk-detach-app/releases) to detach root YouTube RVX from Play Store  
 
 [YouTube-RVX-by-IGOR3K99](https://github.com/IGOR3K99/YouTube-RVX-by-IGOR3K99)
   
