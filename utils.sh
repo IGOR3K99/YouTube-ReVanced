@@ -399,12 +399,6 @@ build_rv() {
 	log "${table}: ${version}"
 
 	p_patcher_args+=("-m ${args[integ]}")
-	local microg_patch
-	microg_patch=$(jq -r ".[] | select(.compatiblePackages // [] | .[] | .name==\"${pkg_name}\") | .name" "${args[ptjs]}" | grep -i "gmscore\|microg" || :)
-	if [ -n "$microg_patch" ] && [[ ${p_patcher_args[*]} =~ $microg_patch ]]; then
-		epr "You cant include/exclude microg patches as that's done by rvmm builder automatically."
-		p_patcher_args=("${p_patcher_args[@]//-[ei] ${microg_patch}/}")
-	fi
 
 	if [ "$mode_arg" = module ]; then
 		build_mode_arr=(module)
@@ -419,13 +413,7 @@ build_rv() {
 	for build_mode in "${build_mode_arr[@]}"; do
 		patcher_args=("${p_patcher_args[@]}")
 		pr "Building '${table}' in '$build_mode' mode"
-		if [ -n "$microg_patch" ]; then
-			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}-${build_mode}.apk"
-			if [ "$build_mode" = apk ]; then
-				patcher_args+=("-i \"${microg_patch}\"")
-			elif [ "$build_mode" = module ]; then
-				patcher_args+=("-e \"${microg_patch}\"")
-			fi
+		
 		else
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
 		fi
