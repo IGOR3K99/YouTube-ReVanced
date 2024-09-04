@@ -15,7 +15,7 @@ build-mode = "module"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 arch = "both"
 version = "7.15.51"
-excluded-patches = "'GmsCore support'"
+excluded-patches = "'Custom branding icon for YouTube Music' 'Custom branding name for YouTube Music' 'GmsCore support'"
 
 [YouTube-Extended]
 app-name = "YouTube"
