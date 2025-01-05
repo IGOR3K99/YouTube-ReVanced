@@ -17,7 +17,7 @@ parallel-jobs = 1                    # amount of cores to use for parallel patch
 compression-level = 9                # module zip compression level
 remove-rv-integrations-checks = true # remove checks from the revanced integrations
 
-patches-source = "inotia00/revanced-patches" # where to fetch patches bundle from. default: "revanced/revanced-patches"
+patches-source = "anddea/revanced-patches" # where to fetch patches bundle from. default: "revanced/revanced-patches"
 cli-source = "j-hc/revanced-cli"             # where to fetch cli from. default: "j-hc/revanced-cli"
 # options like cli-source can also set per app
 rv-brand = "ReVanced Extended" # rebrand from 'ReVanced' to something different. default: "ReVanced"
