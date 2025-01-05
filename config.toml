@@ -19,3 +19,4 @@ patcher-args = """\
   -OdarkThemeBackgroundColor=#FF111111 \
   -OlightThemeBackgroundColor=#FFF9F9F9 \
 """
+version = "19.47.53"
