@@ -1,18 +1,13 @@
 enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
 
-[YouTube-Extended]
-app-name = "YouTube"
+[YouTube-dev]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
+rv-brand = "ReVanced"
+patches-version = "dev"
 build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches =
-included-patches =
-patcher-args = """\
-  -OdarkThemeBackgroundColor=#FF111111 \
-  -OlightThemeBackgroundColor=#FFF9F9F9 \
-"""
-version = "19.47.53"
+version = "20.26.46"
+excluded-patches = "'Description components' 'Hide action buttons' 'Hide player flyout menu' 'Player components' 'Miniplayer' 'Shorts components'"
