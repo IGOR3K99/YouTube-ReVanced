@@ -1,12 +1,18 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
+enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
+
+# add 'enabled = false' for not patching a specific app or remove it from the config
+# see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
+
+# you can use rvmm-config-gen to generate a config
 
 [YouTube-dev]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-cli-source = "revanced/revanced-cli"
+patches-source = "anddea/revanced-patches"
+integrations-source = "anddea/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced"
 patches-version = "dev"
 build-mode = "both"
-version = "20.28.37"
+version = "20.26.46"
+excluded-patches = "'Description components' 'Hide action buttons' 'Hide player flyout menu' 'Player components' 'Miniplayer' 'Shorts components'"
