@@ -1,18 +1,31 @@
-name: Sync with template
+# File: .github/workflows/template-sync.yml
 
 on:
-  push:
-    branches:
-      - main
-
+  # cronjob trigger
+  schedule:
+  - cron: "0 0 1 * *"
+  # manual trigger
+  workflow_dispatch:
 jobs:
-  sync:
+  repo-sync:
     runs-on: ubuntu-latest
+    # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Template Sync
-        uses: marketplace/actions/actions-template-sync@v0.8.0
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+        # https://github.com/actions/checkout#usage
+        # uncomment if you use submodules within the repository
+        # with:
+        #   submodules: true
+
+      - name: actions-template-sync
+        uses: AndreasAugustin/actions-template-sync@v2
         with:
-          source_repo: "https://github.com/j-hc/revanced-magisk-module.git"
-          source_branch: "main"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_repo_path: <owner/repo>
+          upstream_branch: <target_branch> # defaults to main
+          pr_labels: <label1>,<label2>[,...] # defaults to template_sync
