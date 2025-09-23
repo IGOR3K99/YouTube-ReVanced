@@ -30,3 +30,4 @@ jobs:
           source_repo_path: j-hc/revanced-magisk-module.git
           upstream_branch: main # defaults to main
           pr_labels: <label1>,<label2>[,...] # defaults to template_sync
+          github_token: ${{ secrets.WORKFLOW_TOKEN }}
