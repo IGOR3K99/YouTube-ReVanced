@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Template Sync
-        uses: BernhardStrauss/actions-template-sync@v0.8.0
+        uses: marketplace/actions/actions-template-sync@v0.8.0
         with:
           source_repo: "https://github.com/j-hc/revanced-magisk-module.git"
           source_branch: "main"
