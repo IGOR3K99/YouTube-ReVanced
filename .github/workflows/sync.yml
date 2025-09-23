@@ -13,6 +13,6 @@ jobs:
       - name: Template Sync
         uses: BernhardStrauss/actions-template-sync@v0.8.0
         with:
-          source_repo: "https://github.com/source_owner/source_repo.git"
+          source_repo: "https://github.com/j-hc/revanced-magisk-module.git"
           source_branch: "main"
           github_token: ${{ secrets.GITHUB_TOKEN }}
