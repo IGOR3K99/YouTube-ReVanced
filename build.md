@@ -7,5 +7,5 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) and [zygisk-detach-ap
 [YouTube-ReVanced](https://github.com/IGOR3K99/YouTube-ReVanced)
   
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: anddea/patches-3.13.0.rvp  
-[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.13.0)  
+Patches: anddea/patches-3.14.0-dev.5.rvp  
+[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.14.0-dev.5)  
